@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學員登入</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="../plugin/slick/slick.css">
+    <link rel="stylesheet" href="../plugin/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/page.css" >
+
+
+
+    <style type="text/css">
+    #pc_login{
+        display: none;
+    }
+    .container_logintab{
+        margin-top: 124px;
+    }
+    .logintab-content.current h4,.logintab-content h4{
+        text-align: center;
+    }
+    
+    /*Webkit browsers*//*Mozilla Firefox*//*Internet Explorer 10+*/
+    :-webkit-input-placeholder,:-moz-placeholder,:-ms-input-placeholder{    
+    color:rgba(153, 153, 153, 0.599);
+    opacity:0.6;
+
+    }
+
+    ul.tabs{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    ul.tabs li{
+        background: none;
+        color: #222;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    ul.tabs li.current{
+        background: #ededed;
+        color: #222;
+    }
+
+    .logintab-content{
+        display: none;
+        background: #ededed;
+        padding: 15px;
+    }
+
+    .logintab-content.current{
+        display: inherit;
+    }
+    .button{
+        width: 100%;
+    }
+
+    /* ------------平版------------ */
+    @media screen and (min-width: 481px) {
+    .container_logintab{
+    margin-top: 108px;
+    }
+    #sp_login{
+        display: none;
+    }
+    #pc_login{
+        display: block;
+        margin: auto;
+    }
+    .logintab-content{
+        display: block;
+
+    }
+    #login-1,#login-2{
+        width: 40%;
+        float: left;
+        margin: 108px 5%;
+    }  
+    #login-2{
+        padding-bottom: 128px;
+    }
+}
+    /* ------------電腦版------------ */
+    @media screen and (min-width: 769px) {
+
+    .container_logintab{
+        margin-top: 147px;
+    }
+    #login-1,#login-2{
+        width: 40%;
+        float: left;
+        margin: 147px 5%;
+    }  
+
+
+}
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <!--主導覽 開始-->         
+                <!--------電腦版主導覽 -------->
+                <section id="main_header">
+                    <div class="container_cp">
+                        <a href="../index.html" id="pclogo"><img src="../img/pc/logo.png" alt="怪獸小學堂"></a> 
+                            <nav class="main_nav">
+                                <div class="pcnav"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png">校園公告</a></div>
+                                <div class="pcnav"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png">專業團隊</a></div>
+                                <div class="pcnav"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png">安心學習</a></div>
+                            </nav>
+                            <nav class="main_nav">
+                                <div class="pcnav"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png">探索課程</a></div>
+                                <div class="pcnav"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png">入學流程</a></div>
+                                <div class="pcnav"><a href="#"><img src="../img/pc/main_nav6.png">學員登入</a></div>
+                            </nav>
+                    </div>
+                </section>    
+                <!--------手機版主導覽 -------->
+                <section id="sp_header" class="container_main_nav">
+                        <nav id="main_nav1">
+                            <div class="cart">
+                                <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
+                            </div>
+                            <div id="phone_logo">
+                                <a href="../index.html"><img src="../img/pc/logo.png" alt="怪獸小學堂" class="logo"></a>
+                            </div>
+                            <div class="menu">
+                                <img src="../img/phone/icon_menu.png" alt="目錄">
+                            </div>
+                        </nav>
+                </section>
+    
+                <!--------手機版側邊選單 -------->  
+                <section id="sp_nav" class="container_main_nav">
+                        <nav id="main_nav2">
+                            <div id="top">
+                                <div class="cart">
+                                    <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
+                                </div>
+                                <div id="phone_logo">
+                                    <a href="../index.html"><img src="../img/pc/logo.png" alt="怪物小學園"></a>
+                                </div>
+                                <div class="menu">
+                                    <img src="../img/phone/icon_close.png" alt="關閉">
+                                </div>
+                                <div class="clearboth"></div>
+                            </div>
+                        
+                            <div id="middle">
+                                <ul>
+                                    <li class="list"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png"><br>校園公告</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png"><br>專業團隊</a></li>
+                                    <li class="list"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png"><br>安心學習</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png"><br>探索課程</a></li>
+                                    <li class="list"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png"><br>入學流程</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="#"><img src="../img/pc/main_nav6.png"><br>學員登入</a></li>
+                                </ul>
+                                <div class="clearboth"></div>
+                            </div>
+    
+                            <div id="bottom">
+                                <!--頁尾版權宣告 開始-->
+                                <div id="copyright">
+                                <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+                                </div> 
+                                <!--頁尾版權宣告 結束-->
+                            </div>
+                        </nav>
+                    <div class="clearboth"></div>
+                    
+                </section>    
+        <!--主導覽 結束--> 
+    </header> 
+
+<!--電腦版登入頁籤 開始-->
+    <section id="pc_login" class="container_logintab">
+
+    <!--註冊會員-->
+        <div id="login-1" class="logintab-content">
+            <h4>註冊會員</h4>
+            <div class="volume">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">帳號(Email)</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">確認密碼</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="confirm_password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="button"> 註冊</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <!--登入會員-->
+        <div id="login-2" class="logintab-content">
+            <h4>登入會員</h4>
+            <div class="volume">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="email">帳號(Email)</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="password">
+                    </div>
+                    <p><a href="#">忘記密碼?</a></p>
+                    <div class="text-center">
+                        <button type="submit" class="button"><i class="fa fa-sign-in"></i> 登入</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+<!--電腦版登入頁籤 結束-->
+
+        
+
+<!--手機版登入頁籤 開始-->
+    <section id="sp_login" class="container_logintab">
+        <ul class="tabs">
+            <li class="tab-link" data-tab="logintab-1">註冊會員</li>
+            <li class="tab-link current" data-tab="logintab-2">登入會員</li>
+        </ul>
+    <!--註冊會員-->
+        <div id="logintab-1" class="logintab-content">
+            <h4>註冊會員</h4>
+            <div class="volume">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">帳號(Email)</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">確認密碼</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="confirm_password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="button"> 註冊</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <!--登入會員-->
+        <div id="logintab-2" class="logintab-content current">
+            <h4>登入會員</h4>
+            <div class="volume">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="email">帳號(Email)</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="必填欄位">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="必填欄位">
+                        <input type="hidden" name="url" value="password">
+                    </div>
+                    <p><a href="#">忘記密碼?</a></p>
+                    <div class="text-center">
+                        <button type="submit" class="button"><i class="fa fa-sign-in"></i> 登入</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+ 
+<!--手機版登入頁籤 結束-->
+<!--頁尾版權宣告 開始-->
+     <footer class="page_end">
+        <div id="copyright">
+        <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+        </div>  
+    </footer>
+<!--頁尾版權宣告 結束-->
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>  
+    <script src="../plugin/slick/slick.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+    
+    <!----手機登入頁籤---->
+    <script>
+        $(function(){
+            
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.logintab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+
+        });
+    </script>
+
+    
+</body>
+</html>

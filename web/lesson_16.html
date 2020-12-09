@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程內容</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="../plugin/slick/slick.css">
+    <link rel="stylesheet" href="../plugin/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/page.css" >
+
+    <style type="text/css">
+        #tab-1 img{
+            width: 60%;
+        }
+        .tab-content .volume{
+            margin: 0px auto;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!--主導覽 開始-->         
+                <!--------電腦版主導覽 -------->
+                <section id="main_header">
+                    <div class="container_cp">
+                        <a href="../index.html" id="pclogo"><img src="../img/pc/logo.png" alt="怪獸小學堂"></a> 
+                            <nav class="main_nav">
+                                <div class="pcnav"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png">校園公告</a></div>
+                                <div class="pcnav"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png">專業團隊</a></div>
+                                <div class="pcnav"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png">安心學習</a></div>
+                            </nav>
+                            <nav class="main_nav">
+                                <div class="pcnav"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png">探索課程</a></div>
+                                <div class="pcnav"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png">入學流程</a></div>
+                                <div class="pcnav"><a href="#"><img src="../img/pc/main_nav6.png">學員登入</a></div>
+                            </nav>
+                    </div>
+                </section>    
+                <!--------手機版主導覽 -------->
+                <section id="sp_header" class="container_main_nav">
+                        <nav id="main_nav1">
+                            <div class="cart">
+                                <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
+                            </div>
+                            <div id="phone_logo">
+                                <a href="../index.html"><img src="../img/pc/logo.png" alt="怪獸小學堂" class="logo"></a>
+                            </div>
+                            <div class="menu">
+                                <img src="../img/phone/icon_menu.png" alt="目錄">
+                            </div>
+                        </nav>
+                </section>
+        
+                <!--------手機版側邊選單 -------->  
+                <section id="sp_nav" class="container_main_nav">
+                        <nav id="main_nav2">
+                            <div id="top">
+                                <div class="cart">
+                                    <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
+                                </div>
+                                <div id="phone_logo">
+                                    <a href="../index.html"><img src="../img/pc/logo.png" alt="怪物小學園"></a>
+                                </div>
+                                <div class="menu">
+                                    <img src="../img/phone/icon_close.png" alt="關閉">
+                                </div>
+                                <div class="clearboth"></div>
+                            </div>
+                        
+                            <div id="middle">
+                                <ul>
+                                    <li class="list"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png"><br>校園公告</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png"><br>專業團隊</a></li>
+                                    <li class="list"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png"><br>安心學習</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png"><br>探索課程</a></li>
+                                    <li class="list"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png"><br>入學流程</a></li>
+                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
+                                    <li class="list"><a href="#"><img src="../img/pc/main_nav6.png"><br>學員登入</a></li>
+                                </ul>
+                                <div class="clearboth"></div>
+                            </div>
+        
+                            <div id="bottom">
+                                <!--頁尾版權宣告 開始-->
+                                <div id="copyright">
+                                <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+                                </div> 
+                                <!--頁尾版權宣告 結束-->
+                            </div>
+                        </nav>
+                      <div class="clearboth"></div>
+                    
+                </section>    
+        <!--主導覽 結束--> 
+    </header> 
+                
+
+<!--課程圖 與 麵包屑-->
+    <!--手機置底購買選單--> 
+    <aside class="subnav">
+        <a href="#" class="shopping"><button class="shop"><i class="fas fa-shopping-cart" ></i></button></a>
+        <a href="#" class="buying"><button class="buynow">立即購買</button></a>
+    </aside> 
+
+
+    <section class="lesson_banner">
+
+        <div class="bread_wrap">
+            <ol class="breadcrumb">
+                <li><a href="../web/all_lesson.html">全部課程</a></li>
+                <li><a href="../web/all_lesson.html#row-1">熱門課程</a></li>
+                <li><a href="#">課程內容</a></li>
+            </ol>
+        </div>
+        
+        <div class="title"><h2>課程內容</h2></div>
+        <div class="content">
+            <div class="lesson_title">
+                <img src="../img/pc/lesson16.jpg" alt="lesson1">
+                <h2>平常吃的米飯怎麼來?一粒米的旅行，從土地到餐桌。</h2>
+            </div>
+            <div class="brief">
+                <hr>
+                <h4>課程售價</h4>
+                <p>NT$1000</p>
+                <hr>
+            </div>
+            <a href="#"><button class="in">加入購物清單</button></a>
+            <a href="#"><button class="in">立即購買課程</button></a>
+        </div>
+    </section>   
+<!--課程內容頁籤 開始-->
+    <section class="container_lessontab">
+
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">老師介紹</li>
+            <li class="tab-link" data-tab="tab-2">學習任務</li>
+            <li class="tab-link" data-tab="tab-3">學習評價</li>
+            <li class="tab-link" data-tab="tab-4">問題討論</li>
+        </ul>
+    <!--老師介紹-->
+            <div id="tab-1" class="tab-content current">
+                <img src="../img/pc/teacher16.jpg" alt="鄭長南">
+                <h4>鄭長南</h4>
+                <div class="volume">
+                    鄭大哥成長的故鄉是海端鄉的崁頂部落，這個部落的產業大部分都是以農業為主，從10歲跟著父親插秧收割，一直到現在。儘管種稻總是要看天吃飯，雖然曾經動過從商的念頭，最終仍選擇留在農村從事耕作，雖不輕鬆，倒也自由自在。
+                </div>
+            </div>
+
+    <!--學習任務-->
+            <div id="tab-2" class="tab-content">
+                <h4>您將會學到</h4>
+                <div class="volume">
+                    <ul>
+                        <li>課程時數:2hr</li>
+                        <li>課程期限:沒有期限</li>
+                        <li>學分認證:2學分</li>
+                        <li>課程作業:每個學生一個學期末要畫出送給農夫的感謝卡。</li>
+                        <li>課程介紹:一談起台灣人餐桌上最在地的美味，不可或缺卻又最容易被忽略的就是「米」。全世界有超過五五％的國家吃米，而近年來台灣米以優質豐富的口感與營養，行銷日本、進軍世界，不僅是台灣的驕傲，更是與世界接軌的橋樑。透過台灣小故事特輯，來窺探米粒的成長故事，與米粒長大的背後辛苦的農夫，是我們應該感恩的人。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <!--學習評價-->       
+            <div id="tab-3" class="tab-content">
+                    <div class="volume">
+                        <div class="persona">
+                            <div>Lola Lin <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
+                        </div>
+                        <p>我是Lola的媽媽，很喜歡這樣的小故事特輯，讓孩子知道每一餐都應該要懷著感恩的心情，我們真的很幸福!</p>
+                    </div>
+
+                    <div class="volume">
+                        <div class="persona">
+                            <div>David Wang <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
+                        </div>
+                        <p>謝謝農夫叔叔在大太陽底下照顧米粒長大，辛苦了!</p>
+                    </div>
+            </div>
+
+    <!--問題討論-->
+            <div id="tab-4" class="tab-content">
+                    <div class="volume">
+                        <div class="persona">
+                            <div>Joanna Chen</div>
+                        </div>
+                        <p>為什麼米飯有長有短?還有影片內在田地放火燒黑黑是為什麼?這樣米不就死掉了嗎?</p>
+                    </div>
+
+                    <div class="volume">
+                        <div class="persona">
+                            <div>Elsa</div>
+                        </div>
+                        <p>白米外面黃色那一層可以吃嗎?</p> 
+                    </div>
+            </div>
+
+    </section>
+ 
+<!--課程內容頁籤 結束-->
+<!--探索課程 開始-->
+    <section id="lessons_maylike">
+        <div class="serial_intro">
+            <h4><i class="fas fa-thumbs-up"></i> 你可能也會喜歡</h4>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+            <div class="lesson_slider">
+                <div class="lesson_card"><a href="../web/lesson_18.html"><img src="../img/pc/lesson18.jpg" alt=""><div class="lesson_info"><h3>〔生活教育系列〕</h3>什麼是COVID-19?口罩動手做，守護愛的人</div></a></div>
+                <div class="lesson_card"><a href="../web/lesson_14.html"><img src="../img/pc/lesson14.jpg" alt=""><div class="lesson_info"><h3>〔魔法藝術系列〕</h3>紙上花店開張，艾蜜莉的下午茶花繪課</div></a></div>
+                <div class="lesson_card"><a href="../web/lesson_16.html"><img src="../img/pc/lesson16.jpg" alt=""><div class="lesson_info"><h3>〔成長故事系列〕</h3>平常吃的米飯怎麼來?一粒米的旅行，從土地到餐桌。</div></a></div>
+                <div class="lesson_card"><a href="../web/lesson_20.html"><img src="../img/pc/lesson20.jpg" alt=""><div class="lesson_info"><h3>〔理財達人系列〕</h3>理財第一步，怎麼用媽媽的零用錢買玩具?</div></a></div>
+                <div class="lesson_card"><a href="../web/lesson_1.html"><img src="../img/pc/lesson1.jpg" alt=""><div class="lesson_info"><h3>〔偉大航道系列〕</h3>鋼鐵人受困的外太空，地球之外的世界</div></a></div>
+                <div class="lesson_card"><a href="../web/lesson_3.html"><img src="../img/pc/lesson3.jpg" alt=""><div class="lesson_info"><h3>〔動物探索系列〕</h3>史密森國家動物園系列--〈哺乳動物篇〉</div></a></div>
+
+            </div> 
+            <a href="../web/all_lesson.html"><button class="button">更多課程</button></a>
+
+        </div>
+    </section>
+
+<!--探索課程 結束-->
+<!--頁尾版權宣告 開始-->
+     <footer class="page_end">
+        <div id="copyright">
+        <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+        </div>  
+    </footer>
+<!--頁尾版權宣告 結束-->
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>  
+    <script src="../plugin/slick/slick.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+    <!----課程頁籤---->
+    <script>
+        $(function(){
+            
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

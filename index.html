@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪獸小學堂</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="plugin/slick/slick.css">
+    <link rel="stylesheet" href="plugin/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/style.css" >
+    <style>
+        *{
+            outline: 1px solid red;
+        }
+    </style>
+    
+</head>
+<body>
+<!---------------------------------------大圖輪播 開始--------------------------------------->
+<header>
+    <!--電腦版輪播-->
+       <div id="banner_pc">
+                <div class="move"><img src="img/pc/banner_pc1.jpg" alt="大圖輪播1"></div>
+                <div class="move"><img src="img/pc/banner_pc2.jpg" alt="大圖輪播2"></div>
+                <div class="move"><img src="img/pc/banner_pc3.jpg" alt="大圖輪播3"></div>
+                <div class="move"><img src="img/pc/banner_pc4.jpg" alt="大圖輪播4"></div>
+                <div class="move"><img src="img/pc/banner_pc5.jpg" alt="大圖輪播5"></div>
+       </div>
+    <!--平版輪播-->        
+       <div id="banner_lp">
+                <div class="move"><img src="img/pc/banner_lp1.jpg" alt="大圖輪播1"></div>
+                <div class="move"><img src="img/pc/banner_lp2.jpg" alt="大圖輪播2"></div>
+                <div class="move"><img src="img/pc/banner_lp3.jpg" alt="大圖輪播3"></div>
+                <div class="move"><img src="img/pc/banner_lp4.jpg" alt="大圖輪播4"></div>
+                <div class="move"><img src="img/pc/banner_lp5.jpg" alt="大圖輪播5"></div>
+       </div>
+    <!--手機版輪播-->
+    <div id="banner_sp">
+            <div class="move"><img src="img/phone/banner_sp1.jpg" alt="大圖輪播1"></div>
+            <div class="move"><img src="img/phone/banner_sp2.jpg" alt="大圖輪播2"></div>
+            <div class="move"><img src="img/phone/banner_sp3.jpg" alt="大圖輪播3"></div>
+            <div class="move"><img src="img/phone/banner_sp4.jpg" alt="大圖輪播4"></div>
+            <div class="move"><img src="img/phone/banner_sp5.jpg" alt="大圖輪播5"></div>
+   </div>
+           
+
+    <!--主導覽 開始-->         
+        <!--------電腦版主導覽 -------->
+        <section id="main_header">
+            <div class="container_cp">
+                <a href="" id="pclogo"><img src="img/pc/logo.png" alt="怪獸小學堂"></a> 
+                    <nav class="main_nav">
+                        <div class="pcnav"><a href="#link-1"><img src="img/pc/main_nav1.png">校園公告</a></div>
+                        <div class="pcnav"><a href="#link-2"><img src="img/pc/main_nav2.png">專業團隊</a></div>
+                        <div class="pcnav"><a href="#link-3"><img src="img/pc/main_nav4.png">安心學習</a></div>
+                    </nav>
+                    <nav class="main_nav">
+                        <div class="pcnav"><a href="#link-4"><img src="img/pc/main_nav3.png">探索課程</a></div>
+                        <div class="pcnav"><a href="#link-5"><img src="img/pc/main_nav5.png">入學流程</a></div>
+                        <div class="pcnav"><a href="#"><img src="img/pc/main_nav6.png">學員登入</a></div>
+                    </nav>
+            </div>
+        </section>    
+        <!--------手機版主導覽 -------->
+        <section id="sp_header" class="container_main_nav">
+            <div >         
+                <nav id="main_nav1">
+                    
+                        <div class="cart">
+                            <a href="#"><img src="img/phone/icon_cart.png" alt="購物車"></a>
+                        </div>
+                        <div id="phone_logo">
+                            <a href="index.html"><img src="img/pc/logo.png" alt="怪獸小學堂" class="logo"></a>
+                        </div>
+                        <div class="menu">
+                            <img src="img/phone/icon_menu.png" alt="目錄">
+                        </div>
+                </nav>
+            </div>
+        </section>
+
+        <!--------手機版側邊選單 -------->  
+        <section id="sp_nav" class="container_main_nav">
+            <div>         
+                <nav id="main_nav2">
+                    <div id="top">
+                        <div class="cart">
+                            <a href="#"><img src="img/phone/icon_cart.png" alt="購物車"></a>
+                        </div>
+                        <div id="phone_logo">
+                            <a href="index.html"><img src="img/pc/logo.png" alt="怪物小學園"></a>
+                        </div>
+                        <div class="menu">
+                            <img src="img/phone/icon_close.png" alt="關閉">
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                
+                    <div id="middle">
+                        <ul>
+                            <li class="list"><a href="#link-1"><img src="img/pc/main_nav1.png"><br>校園公告</a></li>
+                            <li class="line"><img src="img/phone/line.png" alt="分隔線"></li>
+                            <li class="list"><a href="#link-2"><img src="img/pc/main_nav2.png"><br>專業團隊</a></li>
+                            <li class="list"><a href="#link-3"><img src="img/pc/main_nav4.png"><br>安心學習</a></li>
+                            <li class="line"><img src="img/phone/line.png" alt="分隔線"></li>
+                            <li class="list"><a href="#link-4"><img src="img/pc/main_nav3.png"><br>探索課程</a></li>
+                            <li class="list"><a href="#link-5"><img src="img/pc/main_nav5.png"><br>入學流程</a></li>
+                            <li class="line"><img src="img/phone/line.png" alt="分隔線"></li>
+                            <li class="list"><a href="#"><img src="img/pc/main_nav6.png"><br>學員登入</a></li>
+                        </ul>
+                        <div class="clearboth"></div>
+                    </div>
+
+                    <div id="bottom">
+                        <!--頁尾版權宣告 開始-->
+                        <div id="copyright">
+                        <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+                        </div> 
+                        <!--頁尾版權宣告 結束-->
+                    </div>
+                </nav>
+            </div>
+          <div class="clearboth"></div>
+            
+        </section>    
+<!--主導覽 結束--> 
+</header>
+            
+<!---------------------------------------大圖輪播 結束--------------------------------------->
+
+<!---------------------------------------校園公告 開始--------------------------------------->
+<span class="anchor" id="link-1"></span>
+<aside id="news">
+    <h2>校園公告</h2>
+    <section class="container_newstab">
+
+        <ul class="new_tabs">
+            <li class="news-link" data-tab="category-1">得獎公告</li>
+            <li class="news-link" data-tab="category-2">新課資訊</li>
+            <li class="news-link current" data-tab="category-3">社團活動</li>
+            <li class="news-link" data-tab="category-4">緊急通知</li>
+            <li class="news-link" data-tab="category-5">誠徵公告</li>
+        </ul>
+
+        <!--得獎公告-->
+        <div id="category-1" class="category-content">
+            <ul class="news_lists">
+                <li>
+                    <a href="web/news_2.html">
+                        <p class="category">【得獎公告】</p>
+                        <p class="subtitle">恭喜小怪獸學員-Lola Wang完成初級認證12學分!</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_2.html">
+                        <p class="category">【得獎公告】</p>
+                        <p class="subtitle">恭喜小怪獸學員-Lola Wang完成初級認證12學分!</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_2.html">
+                        <p class="category">【得獎公告】</p>
+                        <p class="subtitle">恭喜小怪獸學員-Lola Wang完成初級認證12學分!</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+        <!--新課資訊-->
+        <div id="category-2" class="category-content">
+            <ul class="news_lists">
+                <li>
+                    <a href="web/news_3.html">
+                        <p class="category">【新課資訊】</p>
+                        <p class="subtitle">〈鋼鐵人受困的外太空 地球之外的世界〉新課上線囉!</p>
+                        <p class="time"><time>2020.03.03</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_3.html">
+                        <p class="category">【新課資訊】</p>
+                        <p class="subtitle">〈鋼鐵人受困的外太空 地球之外的世界〉新課上線囉!</p>
+                        <p class="time"><time>2020.03.03</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_3.html">
+                        <p class="category">【新課資訊】</p>
+                        <p class="subtitle">〈鋼鐵人受困的外太空 地球之外的世界〉新課上線囉!</p>
+                        <p class="time"><time>2020.03.03</time></p>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+        <!--社團活動-->
+        <div id="category-3" class="category-content current">
+            <ul class="news_lists">
+                <li>
+                    <a href="web/news_1.html">
+                        <p class="category">【社團活動】</p>
+                        <p class="subtitle">2020年度上學期桌遊社團新生報名-2020/05/20截止</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_1.html">
+                        <p class="category">【社團活動】</p>
+                        <p class="subtitle">2020年度上學期桌遊社團新生報名-2020/05/20截止</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_1.html">
+                        <p class="category">【社團活動】</p>
+                        <p class="subtitle">2020年度上學期桌遊社團新生報名-2020/05/20截止</p>
+                        <p class="time"><time>2020.02.28</time></p>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+        <!--緊急通知-->
+
+        <div id="category-4" class="category-content">
+            <ul class="news_lists">
+                <li>
+                    <a href="web/news_4.html">
+                        <p class="category">【緊急通知】</p>
+                        <p class="subtitle">新冠病毒防疫須知公告</p>
+                        <p class="time"><time>2020.03.15</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_4.html">
+                        <p class="category">【緊急通知】</p>
+                        <p class="subtitle">新冠病毒防疫須知公告</p>
+                        <p class="time"><time>2020.03.15</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_4.html">
+                        <p class="category">【緊急通知】</p>
+                        <p class="subtitle">新冠病毒防疫須知公告</p>
+                        <p class="time"><time>2020.03.15</time></p>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+        <!--誠徵公告-->
+
+        <div id="category-5" class="category-content">
+            <ul class="news_lists">
+                <li>
+                    <a href="web/news_5.html">
+                        <p class="category">【誠徵公告】</p>
+                        <p class="subtitle">〈大手拉小手〉誠徵說故事伴讀，歡迎踴躍報名!</p>
+                        <p class="time"><time>2020.03.18</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_5.html">
+                        <p class="category">【誠徵公告】</p>
+                        <p class="subtitle">〈大手拉小手〉誠徵說故事伴讀，歡迎踴躍報名!</p>
+                        <p class="time"><time>2020.03.18</time></p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="web/news_5.html">
+                        <p class="category">【誠徵公告】</p>
+                        <p class="subtitle">〈大手拉小手〉誠徵說故事伴讀，歡迎踴躍報名!</p>
+                        <p class="time"><time>2020.03.18</time></p>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+    </section>
+    <a href=""><button class="button">了解更多</button></a>
+    <div class="clearboth"></div>
+</aside>
+<!---------------------------------------校園公告 結束--------------------------------------->
+
+<!---------------------------------------專業團隊 開始--------------------------------------->
+    <span class="anchor" id="link-2"></span>
+    <section id="pro_team">
+    <div class="pro_container">  
+        <div class="wrap">
+            <h2>專業團隊</h2>
+            <!--item 1-->
+            <div class="item">
+                <div class="pro_pic">
+                    <img src="img/pc/pro_pic1.jpg" alt="專家指導">
+                </div>
+                <div class="txt">
+                    <h3>專家指導</h3>
+                    <p>來自世界各地的素人專家，找到適合你的老師。</p>
+                </div>
+            </div>
+
+            <!--item 2-->
+            <div class="item">
+                <div class="txt">
+                    <h3>多元課程</h3>
+                    <p>想學什麼?將近1000000堂課程，盡情挖寶吧!</p>
+                </div>
+                <div class="pro_pic">
+                    <img src="img/pc/pro_pic2.jpg" alt="多元課程">
+                </div>
+            </div>
+            <!--item 3-->
+            <div class="item">
+                <div class="pro_pic">
+                    <img src="img/pc/pro_pic3.jpg" alt="專屬課表">
+                </div>
+                <div class="txt">
+                    <h3>專屬課表</h3>
+                    <p>隨時隨地，客製化專屬課表，自由學習。</p>
+                </div>
+            </div>
+            <!--item 4-->
+            <div class="item">
+                <div class="txt">
+                    <h3>專業認證</h3>
+                    <p>通過冒險關卡，可獲得學校認可學分。</p>
+                </div>
+                <div class="pro_pic">
+                    <img src="img/pc/pro_pic4.jpg" alt="專業認證">
+                </div>
+            </div>
+        </div>
+    </div>  
+<!----------------------------------------專業團隊 結束--------------------------------------->
+
+<!---------------------------------------安心學習 開始---------------------------------------->
+    <span class="anchor" id="link-3"></span>
+    <aside id="happylearning">
+        <div class="container">
+            <h2>安心學習</h2>
+                <div class="option">
+                    <img src="img/pc/learning1.png" alt="一對一線上課後輔導">
+                    <div class="intro">
+                        <h3>一對一線上課後輔導</h3>
+                        <p>課程期間，近百位線上助教課後服務。選擇一位適合的前輩與您一同克服障礙。</p>
+                    </div>
+                </div>
+                <div class="option">
+                    <img src="img/pc/learning2.png" alt="軟硬體設備租借計劃">
+                    <div class="intro">
+                        <h3>軟硬體設備租借計劃</h3>
+                        <p>想上課卻沒有任何設備嗎?別擔心，怪獸小學堂提供您上課所需的設備，讓您安心學習。</p>
+                    </div>
+                </div>
+                <div class="option">
+                    <img src="img/pc/learning3.png" alt="孩童餐盒安心計劃">
+                    <div class="intro">
+                        <h3>孩童餐盒安心計劃</h3>
+                        <p>怪獸小學堂與外送平台合作，讓弱勢孩童在家線上學習也能吃的放心又健康。</p>
+                    </div>
+                </div>
+            <div class="clearboth"></div>
+        </div>
+    </aside>
+</section>
+<!---------------------------------------安心學習 結束--------------------------------------->
+
+<!---------------------------------------探索課程 開始--------------------------------------->
+<span class="anchor" id="link-4"></span>
+<section id="lessons">
+    <div class="serial_intro">
+        <h2>精選課程</h2>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+
+        <div class="lesson_slider">
+            <div class="lesson_card"><a href="web/lesson_18.html"><img src="img/pc/lesson18.jpg" alt=""><div class="lesson_info"><h3>〔生活教育系列〕</h3>什麼是COVID-19?口罩動手做，守護愛的人。</div></a></div>
+            <div class="lesson_card"><a href="web/lesson_14.html"><img src="img/pc/lesson14.jpg" alt=""><div class="lesson_info"><h3>〔魔法藝術系列〕</h3>紙上花店開張，艾蜜莉的下午茶花繪課。</div></a></div>
+            <div class="lesson_card"><a href="web/lesson_16.html"><img src="img/pc/lesson16.jpg" alt=""><div class="lesson_info"><h3>〔成長故事系列〕</h3>平常吃的米飯怎麼來?一粒米的旅行，從土地到餐桌。</div></a></div>
+            <div class="lesson_card"><a href="web/lesson_20.html"><img src="img/pc/lesson20.jpg" alt=""><div class="lesson_info"><h3>〔理財達人系列〕</h3>理財第一步，怎麼用媽媽的零用錢買玩具?</div></a></div>
+            <div class="lesson_card"><a href="web/lesson_1.html"><img src="img/pc/lesson1.jpg" alt=""><div class="lesson_info"><h3>〔偉大航道系列〕</h3>鋼鐵人受困的外太空，地球之外的世界。</div></a></div>
+            <div class="lesson_card"><a href="web/lesson_3.html"><img src="img/pc/lesson3.jpg" alt=""><div class="lesson_info"><h3>〔動物探索系列〕</h3>史密森國家動物園系列--〈哺乳動物篇〉。</div></a></div>
+
+        </div> 
+        <a href="web/all_lesson.html"><button class="button">探索課程</button></a>
+
+    </div>
+</section>
+<!---------------------------------------探索課程 結束--------------------------------------->
+
+<!---------------------------------------入學流程 開始--------------------------------------->
+<span class="anchor" id="link-5"></span>
+ <section id="procedure">
+    <h2>入學流程</h2>
+
+        <div class="container_procedure">
+            <ul>
+                <li class="steps"><b>STEP 1</b><p>探索課程</p></li>
+                <li class="steps"><b>STEP 2</b><p>選擇加購</p></li>
+                <li class="steps"><b>STEP 3</b><p>加入會員</p></li>
+                <li class="steps"><b>GOAL !</b><p>開始課程</p></li>
+            </ul>
+            <div class="clearboth"></div>
+            <a href="web/all_lesson.html"><button class="button">開始探索</button></a>
+        </div>
+    
+<!---------------------------------------入學流程 結束--------------------------------------->
+
+<!---------------------------------------頁尾版權宣告 開始--------------------------------------->
+   <footer>
+     <div id="copyright">
+        <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+     </div>  
+   </footer>
+<!---------------------------------------頁尾版權宣告 結束--------------------------------------->
+</section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>  
+    <script src="plugin/slick/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+/*-----------全域-----------*/
+    *{
+
+        list-style: none;
+    }
+    body{
+        background-color: #ffffff;
+      }
+
+    hr{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(211, 178, 116, 0.75), rgba(0, 0, 0, 0));
+        }
+    #sp_header{
+        background-color: teal;
+    }
+
+    .button{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+
+
+    /*--手機置底購買選單--*/
+
+    .subnav{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        left: 0;
+        bottom:0;
+        z-index: 1000;
+        background-color: #F3F3F1;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px -2px 2px #e2e2e1;
+
+    }
+
+    .subnav a{
+        margin-left: 10px;
+    }
+    .subnav .shopping{
+        width: 15%;
+    }
+    .subnav .shop {
+        width: 100%;
+        padding: 10px 0px;
+        border: 1px solid teal;
+        color: teal;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .subnav .shopping:hover .shop{
+        background-color: #d3624f;
+        color: #fff;
+    }
+
+    .subnav .buying{
+        width: 50%;
+    }
+
+   .subnav .buynow{
+        width: 100%;
+        border: none;
+        padding: 10px 0px;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 2px;
+        font-family: "微軟正黑體";
+        background-color: teal;
+        border-radius: 5px;
+    }
+    .subnav .buying:hover .buynow{
+        background-color: #d3624f;
+        color: #fff;
+    }
+
+    
+
+/*課程圖*/    
+    .lesson_banner{
+        text-align: center;
+        margin-top: 124px;
+    }
+    .lesson_title img{
+        width: 100%;
+    }
+   /* .title h2{
+        margin: 5px;
+    }
+    .title{
+
+        margin:10px auto 30px auto;
+        width: 15%;
+        border-bottom: 5px solid rgba(202, 202, 202, 0.86);
+    }*/
+    .lesson_title h2{
+        color:#45648f;
+        font-weight: 600;
+        font-size:1.3em;
+    }
+
+    .brief h4{
+        font-size:1.2em;
+        font-weight: 500;
+        margin: 10px 0px;
+        color:#808080;
+    }
+    .brief p{
+        font-size:2em;
+        margin: 20px 0px;
+        color:#b63636;
+    }
+    .in{
+        display: none;
+    }
+
+    /*麵包屑*/
+
+    .bread_wrap{
+        background-image: url('../img/pc/background1.png');
+        padding: 10px 0px;
+        
+    }
+    .breadcrumb{
+        margin: auto;
+        display: flex;
+        padding-inline-start:0px;
+
+    }
+    .breadcrumb li{
+        padding: 0px 15px;
+    }
+    .breadcrumb li a{
+        color:#808080;
+    }
+    .breadcrumb li a:hover,.breadcrumb li:last-child a{
+        color:#b63636;
+        font-weight: bold;
+    }
+
+    .breadcrumb li+li{
+        padding-left: 0;
+    }
+
+    .breadcrumb li+li:before{
+        content: '>';
+        margin-right: 20px;
+        color:#808080;
+
+    }
+/*校園公告分頁*/
+    .news_content{
+        margin: auto;
+    }
+    .title img{
+        width: 100%;
+    }
+    .subtitle h3{
+        color:#45648f;
+    }
+
+    .news_info{
+        text-align: left;
+        padding: 0px 20px;
+        color: lightslategray;
+    }
+
+    .news_info h4{
+        color: #9ac1ce;
+    }
+    .news_info p{
+        color: rgb(92, 122, 151);
+        margin: 10px 0px;
+        font-size: 1em;
+    }
+    .news_info a{
+        text-decoration: underline;
+    }
+
+    .points h5{
+        color: rgb(92, 122, 151);
+        margin: 10px 0px;
+        font-size: 1em;
+    }
+    .num li{
+        list-style-type: circle;
+    }
+
+
+/*課程內容頁籤*/
+    .nimbus-is-editor{
+        margin: 0;
+    }
+    .tabs{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+	.container_lessontab{
+		width: 100%;
+        text-align: center;
+        line-height: 1.6;
+        letter-spacing: 2px;
+        background-image: url('../img/pc/pro_bg.png');
+        padding: 10px 0px;
+
+	}
+
+	ul.tabs{
+		margin: 0px;
+		padding: 0px;
+        list-style: none;
+	}
+	ul.tabs li{
+		background: none;
+		color: #8e8e8e;
+		display: inline-block;
+		padding: 10px 0px;
+		cursor: pointer;
+	}
+
+	ul.tabs li.current{
+        color: #FFD966;
+        font-weight: 400;
+        font-size: 1em;
+        border-bottom: 5px solid #FFD966;
+	}
+
+	.tab-content{
+		display: none;
+        margin-top: 10px;
+        text-align: center;
+	}
+
+	.tab-content.current{
+		display: inherit;
+	}
+
+    .tab-content .volume{
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.088);
+        border-radius: 5px;
+        text-align: left;
+        padding: 10px 20px;
+        margin: 20px auto;
+        color: #e1e1e1;
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+
+    .volume li{
+        list-style-type: circle;
+    }
+
+    .tab-content h4{
+        font-size: 1.3em;
+        font-weight: 500;
+        color:#ffd900;
+        margin: 10px auto;
+    }
+    .tab-content img{
+        width: 80%;
+
+    }
+
+     /*你可能也會喜歡*/
+
+   .serial_intro h4{
+        padding-left: 8.5%;
+        color: slategrey;
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 40px 0px 10px 10px;
+    }
+    
+
+    /*頁尾*/
+
+    .page_end{
+        margin: 0;
+        padding: 20px;
+        background-image: url('../img/pc/background1.png');
+        display: block;
+    }
+    .page_end #copyright{
+        margin-top: 0px;
+    }
+    .page_end #copyright p{
+
+        color: #70645c;
+    }
+/* ------------平板------------ */
+@media screen and (min-width: 481px) {
+    .lesson_banner{
+        margin-top: 108px;
+    }
+
+    #main_header{
+        background-color: teal;
+    }
+
+
+    .subnav{
+        display: none;
+    }
+
+
+    .content{
+        width: 20%;
+        background-color:#fbebd5;
+        position: absolute;
+        top:20%;
+        right: 3%;
+        z-index: 999;
+        padding: 10px 10px ;
+        border-radius: 10px;
+        border: 5px solid #c9c4b9;
+        box-shadow: 3px 3px 0px #a5a5a5;
+    }
+    .lesson_title h2{
+        font-weight: 600;
+        font-size:1em;
+    }
+
+    .brief h4{
+        font-size:0.8em;
+        font-weight: 500;
+    }
+    .brief p{
+        font-size:1.5em;
+        margin: 20px 0px;
+        color:#b63636;
+    }
+    .in{ 
+        display: block;
+        width: 80%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1em;
+        font-family: "微軟正黑體";
+        padding: 3% 8%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        background-color: #d66a49;
+        display: block; 
+        box-shadow: 0px 5px #999
+    } 
+    .in:focus{
+      outline: none;
+    }
+    .in:hover {
+        background-color: #3e8e41;
+    }
+
+    .in:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+    }
+
+    /*校園公告分頁*/
+    .news_content,.title img{
+        width: 60%;
+    }
+    .subtitle{
+        font-size: 1em;
+    }
+    .time{
+        font-size: 0.8em;
+    }
+
+
+    /*課程頁籤*/
+    ul.tabs,.tab-content{
+        width: 60%;
+        margin-left: 10%;
+
+    }
+
+}
+
+/* ------------電腦版------------ */
+@media screen and (min-width: 769px) {
+    /*課程圖*/
+    .lesson_banner{
+        margin-top: 147px;
+    }
+    .content{
+        top:25%;
+
+    }
+    /*校園公告分頁*/
+    .news_content,.title img{
+        width: 40%;
+    }   
+
+
+}
