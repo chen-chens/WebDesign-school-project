@@ -17,176 +17,202 @@
 
 
     <style type="text/css">
-    #pc_login{
-        display: none;
+        #pc_login{
+            display: none;
+        }
+        .container_logintab{
+            margin-top: 124px;
+        }
+        .logintab-content.current h4,.logintab-content h4{
+            text-align: center;
+        }
+
+        /*Webkit browsers*//*Mozilla Firefox*//*Internet Explorer 10+*/
+        :-webkit-input-placeholder,:-moz-placeholder,:-ms-input-placeholder{    
+        color:rgba(153, 153, 153, 0.599);
+        opacity:0.6;
+
+        }
+
+        ul.tabs{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        ul.tabs li{
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        ul.tabs li.current{
+            background: #ededed;
+            color: #222;
+        }
+
+        .logintab-content{
+            display: none;
+            background: #ededed;
+            padding: 15px;
+        }
+
+        .logintab-content.current{
+            display: inherit;
+        }
+        .button{
+            width: 100%;
+        }
+
+        /* ------------平版------------ */
+        @media screen and (min-width: 481px) {
+        .container_logintab{
+        margin-top: 108px;
+        }
+        #sp_login{
+            display: none;
+        }
+        #pc_login{
+            display: block;
+            margin: auto;
+        }
+        .logintab-content{
+            display: block;
+
+        }
+        #login-1,#login-2{
+            width: 40%;
+            float: left;
+            margin: 108px 5%;
+        }  
+        #login-2{
+            padding-bottom: 128px;
+        }
     }
-    .container_logintab{
-        margin-top: 124px;
-    }
-    .logintab-content.current h4,.logintab-content h4{
-        text-align: center;
-    }
-    
-    /*Webkit browsers*//*Mozilla Firefox*//*Internet Explorer 10+*/
-    :-webkit-input-placeholder,:-moz-placeholder,:-ms-input-placeholder{    
-    color:rgba(153, 153, 153, 0.599);
-    opacity:0.6;
+        /* ------------電腦版------------ */
+        @media screen and (min-width: 769px) {
+
+        .container_logintab{
+            margin-top: 147px;
+        }
+        #login-1,#login-2{
+            width: 40%;
+            float: left;
+            margin: 147px 5%;
+        }  
+
 
     }
-
-    ul.tabs{
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-    }
-    ul.tabs li{
-        background: none;
-        color: #222;
-        display: inline-block;
-        padding: 10px 15px;
-        cursor: pointer;
-    }
-
-    ul.tabs li.current{
-        background: #ededed;
-        color: #222;
-    }
-
-    .logintab-content{
-        display: none;
-        background: #ededed;
-        padding: 15px;
-    }
-
-    .logintab-content.current{
-        display: inherit;
-    }
-    .button{
-        width: 100%;
-    }
-
-    /* ------------平版------------ */
-    @media screen and (min-width: 481px) {
-    .container_logintab{
-    margin-top: 108px;
-    }
-    #sp_login{
-        display: none;
-    }
-    #pc_login{
-        display: block;
-        margin: auto;
-    }
-    .logintab-content{
-        display: block;
-
-    }
-    #login-1,#login-2{
-        width: 40%;
-        float: left;
-        margin: 108px 5%;
-    }  
-    #login-2{
-        padding-bottom: 128px;
-    }
-}
-    /* ------------電腦版------------ */
-    @media screen and (min-width: 769px) {
-
-    .container_logintab{
-        margin-top: 147px;
-    }
-    #login-1,#login-2{
-        width: 40%;
-        float: left;
-        margin: 147px 5%;
-    }  
-
-
-}
 
     </style>
-
-
-
 </head>
 
 <body>
     <header>
         <!--主導覽 開始-->         
-                <!--------電腦版主導覽 -------->
-                <section id="main_header">
-                    <div class="container_cp">
-                        <a href="../index.html" id="pclogo"><img src="../img/pc/logo.png" alt="怪獸小學堂"></a> 
-                            <nav class="main_nav">
-                                <div class="pcnav"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png">校園公告</a></div>
-                                <div class="pcnav"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png">專業團隊</a></div>
-                                <div class="pcnav"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png">安心學習</a></div>
-                            </nav>
-                            <nav class="main_nav">
-                                <div class="pcnav"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png">探索課程</a></div>
-                                <div class="pcnav"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png">入學流程</a></div>
-                                <div class="pcnav"><a href="#"><img src="../img/pc/main_nav6.png">學員登入</a></div>
-                            </nav>
+            <!--------電腦版主導覽 -------->
+            <section id="main_header">
+                <div class="container_cp">
+                    <a href="../index.html" id="pclogo"><img src="../img/pc/logo.png" alt="怪獸小學堂"></a> 
+                    <nav class="main_nav">
+                        <div class="pcnav"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png">校園公告</a></div>
+                        <div class="pcnav"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png">專業團隊</a></div>
+                        <div class="pcnav"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png">安心學習</a></div>
+                    </nav>
+                    <nav class="main_nav">
+                        <div class="pcnav"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png">探索課程</a></div>
+                        <div class="pcnav"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png">入學流程</a></div>
+                        <div class="pcnav"><a href="#"><img src="../img/pc/main_nav6.png">學員登入</a></div>
+                    </nav>
+                </div>
+            </section>    
+            <!--------手機版主導覽 -------->
+            <section id="sp_header" class="container_main_nav">
+                <nav id="main_nav1">
+                    <div class="cart">
+                        <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
                     </div>
-                </section>    
-                <!--------手機版主導覽 -------->
-                <section id="sp_header" class="container_main_nav">
-                        <nav id="main_nav1">
-                            <div class="cart">
-                                <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
-                            </div>
-                            <div id="phone_logo">
-                                <a href="../index.html"><img src="../img/pc/logo.png" alt="怪獸小學堂" class="logo"></a>
-                            </div>
-                            <div class="menu">
-                                <img src="../img/phone/icon_menu.png" alt="目錄">
-                            </div>
-                        </nav>
-                </section>
-    
-                <!--------手機版側邊選單 -------->  
-                <section id="sp_nav" class="container_main_nav">
-                        <nav id="main_nav2">
-                            <div id="top">
-                                <div class="cart">
-                                    <a href="#"><img src="../img/phone/icon_cart.png" alt="購物車"></a>
-                                </div>
-                                <div id="phone_logo">
-                                    <a href="../index.html"><img src="../img/pc/logo.png" alt="怪物小學園"></a>
-                                </div>
-                                <div class="menu">
-                                    <img src="../img/phone/icon_close.png" alt="關閉">
-                                </div>
-                                <div class="clearboth"></div>
-                            </div>
-                        
-                            <div id="middle">
-                                <ul>
-                                    <li class="list"><a href="../index.html#link-1"><img src="../img/pc/main_nav1.png"><br>校園公告</a></li>
-                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
-                                    <li class="list"><a href="../index.html#link-2"><img src="../img/pc/main_nav2.png"><br>專業團隊</a></li>
-                                    <li class="list"><a href="../index.html#link-3"><img src="../img/pc/main_nav4.png"><br>安心學習</a></li>
-                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
-                                    <li class="list"><a href="../index.html#link-4"><img src="../img/pc/main_nav3.png"><br>探索課程</a></li>
-                                    <li class="list"><a href="../index.html#link-5"><img src="../img/pc/main_nav5.png"><br>入學流程</a></li>
-                                    <li class="line"><img src="../img/phone/line.png" alt="分隔線"></li>
-                                    <li class="list"><a href="#"><img src="../img/pc/main_nav6.png"><br>學員登入</a></li>
-                                </ul>
-                                <div class="clearboth"></div>
-                            </div>
-    
-                            <div id="bottom">
-                                <!--頁尾版權宣告 開始-->
-                                <div id="copyright">
-                                <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
-                                </div> 
-                                <!--頁尾版權宣告 結束-->
-                            </div>
-                        </nav>
-                    <div class="clearboth"></div>
-                    
-                </section>    
+                    <div id="phone_logo">
+                        <a href="../index.html"><img src="../img/pc/logo.png" alt="怪獸小學堂" class="logo"></a>
+                    </div>
+                    <div class="menu">
+                        <img src="../img/phone/icon_menu.png" alt="目錄">
+                    </div>
+                </nav>
+            </section>
+
+            <!--------手機版側邊選單 -------->  
+            <section id="sp_nav" class="container_main_nav">
+                <nav id="main_nav2">
+                    <div id="top">
+                        <div class="cart">
+                            <a href="#">
+                                <img src="../img/phone/icon_cart.png" alt="購物車">
+                            </a>
+                        </div>
+                        <div id="phone_logo">
+                            <a href="../index.html">
+                                <img src="../img/pc/logo.png" alt="怪物小學園">
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <img src="../img/phone/icon_close.png" alt="關閉">
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                
+                    <div id="middle">
+                        <ul>
+                            <li class="list">
+                                <a href="../index.html#link-1">
+                                    <img src="../img/pc/main_nav1.png" alt="校園公告"><br>校園公告
+                                </a>
+                            </li>
+                            <li class="line">
+                                <img src="../img/phone/line.png" alt="分隔線"></li>
+                            <li class="list">
+                                <a href="../index.html#link-2">
+                                    <img src="../img/pc/main_nav2.png" alt="專業團隊"><br>專業團隊
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="../index.html#link-3">
+                                    <img src="../img/pc/main_nav4.png" alt="安心學習"><br>安心學習
+                                </a>
+                            </li>
+                            <li class="line">
+                                <img src="../img/phone/line.png" alt="分隔線"></li>
+                            <li class="list">
+                                <a href="../index.html#link-4">
+                                    <img src="../img/pc/main_nav3.png" alt="探索課程"><br>探索課程
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="../index.html#link-5">
+                                    <img src="../img/pc/main_nav5.png" alt="入學流程"><br>入學流程
+                                </a>
+                            </li>
+                            <li class="line">
+                                <img src="../img/phone/line.png" alt="分隔線"></li>
+                            <li class="list">
+                                <a href="#"><img src="../img/pc/main_nav6.png" alt="學員登入"><br>學員登入
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearboth"></div>
+                    </div>
+
+                    <div id="bottom">
+                        <!--頁尾版權宣告 開始-->
+                        <div id="copyright">
+                            <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+                        </div> 
+                        <!--頁尾版權宣告 結束-->
+                    </div>
+                </nav>
+                <div class="clearboth"></div>
+            </section>    
         <!--主導覽 結束--> 
     </header> 
 
@@ -315,7 +341,7 @@
 <!--頁尾版權宣告 開始-->
      <footer class="page_end">
         <div id="copyright">
-        <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
+            <p>COPYRIGHT 2020 MONSTER SCHOOL ALL RIGHTS RESEARED.</p>
         </div>  
     </footer>
 <!--頁尾版權宣告 結束-->
