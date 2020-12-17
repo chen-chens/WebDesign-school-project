@@ -314,14 +314,12 @@ hr {
 
 /*---專業團隊---*/
 #pro_team{
-    background-image: url('../img/pc/pro_bg.png');
+    background: url('../img/pc/pro_bg.png') no-repeat center/cover;
     padding: 20px 0px;
-
 }
 
 .item{
     margin-bottom: 20px;
-
 }
 .item .pro_pic{
     display: none;
@@ -366,7 +364,7 @@ hr {
 }
 .option img{
     width:80%;
-
+    vertical-align: bottom;
 }
 .option .intro{
     padding: 10px 15px;
@@ -470,6 +468,10 @@ hr {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+.container_procedure ul{
+    display: flex;
+    flex-direction: column;
 }
 
 .steps{
@@ -619,13 +621,17 @@ transform: translateY(2px);
     
     .wrap{
         width: 70%;
-         margin:auto;
-
+        margin:auto;
+        display: flex;
+        flex-direction: column;
     }
     .item{  
         display: flex;
         align-items: center;
     }  
+    .item:nth-child(even){
+        flex-direction: row-reverse;
+    }
     .item h3{
         font-size: 1.3em;
         font-weight: 600;
@@ -655,26 +661,16 @@ transform: translateY(2px);
     .item > :first-child{
         margin-right: -10%;
     }
+    .item:nth-child(even) > :first-child{
+        margin-right: 0%;
+        margin-left: -10%;
+    }
 
     /*---安心學習---*/
-    .container{
-        width: 70%;
-    }
     .option{
-        width:30%;
-        float: left;
-        margin-right: 3.3%;
-    }
-
-    /*---入學流程---*/
-
-    .steps{
-        width:20%;
-        float: left;
-        margin-left: 3%;
+        width:60%;
 
     }
-
 
 
 }
@@ -711,14 +707,34 @@ transform: translateY(2px);
     .main_nav a{
         font-size: 0.9em;
     }
+    /*---安心學習---*/
+    .container{
+        width: 70%;
+    }
+    .option-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .option{
+        width:30%;
+
+    }
     /*---校園公告---*/
     .container_newstab {
         width: 45%;
     }
 
+    /*---入學流程---*/
 
-
-
+    .container_procedure ul{
+        flex-direction: row;
+    }
+    .steps{
+        margin-right: 20px;
+    }
+    .steps:last-child{
+        margin-right: auto;
+    }
 
 
 
