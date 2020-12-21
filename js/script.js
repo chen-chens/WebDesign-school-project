@@ -43,13 +43,7 @@ $(function(){
 		}
 	});
 });
-/*手機側選單點擊錨點消失*/
-$(function(){
-    $('#sp_nav a').on('click',function(){
-        $('#sp_nav').toggle(1000);
 
-    });
-});
 
 /*-----------------sp navbar fixed on top when scroll-------------------*/
 
@@ -70,6 +64,15 @@ $(function(){
 
     
 /*-----------------------------手機menu動畫-----------------------------*/
+
+/*手機側選單點擊錨點消失*/
+$(function(){
+    $('#sp_nav a').on('click',function(){
+        $('#sp_nav').toggle(1000);
+
+    });
+});
+
 $(function(){
     var j = 1;  //變數j為點擊次數
     $('.menu').click(function(){
@@ -138,5 +141,17 @@ $(function(){
 });
 
 
-    
+/*-----------------------------線上客服-----------------------------*/  
 
+
+// <!--Start of Tawk.to Script-->
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5eddbdd44a7c6258179a1f4f/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+// <!--End of Tawk.to Script-->
